@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025-2026 日韓流行穿搭大預言</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        fashion: {
+                            silver: '#C0C0C0',
+                            chrome: '#E5E4E2',
+                            morandi: '#9A9EAB',
+                            dark: '#0F172A',
+                            accent: '#FACC15',
+                            glass: 'rgba(255, 255, 255, 0.1)',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0F172A;
+            color: #F8FAFC;
+            overflow-x: hidden;
+        }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #F8FAFC 0%, #94A3B8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .silver-gradient {
+            background: linear-gradient(135deg, #E2E8F0 0%, #94A3B8 50%, #475569 100%);
+        }
+
+        .bento-item {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .bento-item:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0F172A;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Hero / Title Section -->
+    <header class="relative pt-16 pb-12 px-6 text-center overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-20">
+            <div class="absolute top-10 left-10 w-64 h-64 bg-blue-500 rounded-full blur-[120px] animate-pulse"></div>
+            <div class="absolute bottom-10 right-10 w-64 h-64 bg-purple-500 rounded-full blur-[120px] animate-float"></div>
+        </div>
+        
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 gradient-text tracking-tighter">
+            2025-2026<br>
+            <span class="text-fashion-accent">日韓流行穿搭大預言</span>
+        </h1>
+        <p class="text-slate-400 text-lg max-w-2xl mx-auto font-light">
+            探索引領亞洲的時尚風潮：從次文化革命到極客美學的演進。
+        </p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 space-y-16 pb-24">
+        
+        <!-- TOP: Infographic Section -->
+        <section id="infographic" class="relative">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="h-px flex-1 bg-slate-800"></span>
+                <h2 class="text-sm font-bold tracking-widest uppercase text-slate-500">Visual Insights</h2>
+                <span class="h-px flex-1 bg-slate-800"></span>
+            </div>
+            
+            <div class="glass-card overflow-hidden group">
+                <div class="p-2">
+                    <img src="https://opal.google/board/blobs/bb81562e-f733-4f5f-8403-0a55cd055d8c" alt="2025-2026 Fashion Infographic" class="w-full h-auto rounded-2xl shadow-2xl transition-transform duration-700 group-hover:scale-[1.01]">
+                </div>
+                <div class="p-8 grid md:grid-cols-3 gap-8 border-t border-slate-800">
+                    <div class="space-y-2">
+                        <h3 class="text-fashion-accent font-bold text-xl italic underline decoration-2 underline-offset-4">日系趨勢</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">主打「機能與夢幻」，融合次文化系與 Gorpcore 機能性，關鍵元素包含金屬銀質感與細緻的大量疊穿。</p>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-fashion-accent font-bold text-xl italic underline decoration-2 underline-offset-4">韓系趨勢</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">主打「結構與極客」，將辦公室女妖風 (Office Siren) 升級為力量穿搭，並結合重工單寧與浪漫廢土風格。</p>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-white font-bold text-xl italic underline decoration-2 underline-offset-4">核心特點</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">2025-2026 的時尚將是科技機能、剪裁工藝與強烈個人主義的深度融合。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MIDDLE: Video & Audio Section -->
+        <section id="media" class="grid lg:grid-cols-5 gap-8 items-start">
+            <div class="lg:col-span-3 space-y-6">
+                <div class="glass-card p-4 aspect-video flex items-center justify-center relative overflow-hidden bg-black shadow-2xl">
+                    <video src="https://opal.google/board/blobs/dd27a787-3931-467c-b0b9-14881264ee24" class="w-full h-full object-cover rounded-xl" controls autoplay muted loop></video>
+                    <div class="absolute top-8 right-8 pointer-events-none">
+                        <div class="bg-fashion-accent text-black px-3 py-1 rounded-full text-xs font-black animate-pulse">TREND MOVIE</div>
+                    </div>
+                </div>
+                <div class="glass-card p-6 flex flex-col md:flex-row items-center gap-6">
+                    <div class="bg-fashion-accent/10 p-4 rounded-full">
+                        <svg class="w-8 h-8 text-fashion-accent" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+                    </div>
+                    <div class="flex-1">
+                        <p class="text-sm text-slate-400 mb-2 font-medium">趨勢專屬背景音樂</p>
+                        <audio src="https://opal.google/board/blobs/341ada72-a2e0-4de5-8bce-0a0f920d883e" controls class="w-full h-10 opacity-80 hover:opacity-100 transition-opacity"></audio>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-2 space-y-4">
+                <div class="glass-card p-8 h-full flex flex-col justify-center">
+                    <div class="text-fashion-accent mb-4">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">趨勢動態速覽</h3>
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        這是一段根據報告內容製作的 2025-2026 日韓流行穿搭趨勢短影片，展示了金屬銀、機能感、極客風與層次穿搭等核心元素。
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3 text-slate-400 text-sm">
+                            <span class="w-1.5 h-1.5 rounded-full bg-fashion-accent"></span> 次文化系 (Subcul-kei) 現代化
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-400 text-sm">
+                            <span class="w-1.5 h-1.5 rounded-full bg-fashion-accent"></span> 辦公室女妖 (Office Siren) 力量感
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-400 text-sm">
+                            <span class="w-1.5 h-1.5 rounded-full bg-fashion-accent"></span> 金屬銀與數位自然主義
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- BOTTOM: Detailed Report Section -->
+        <section id="report" class="space-y-12">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="h-px flex-1 bg-slate-800"></span>
+                <h2 class="text-sm font-bold tracking-widest uppercase text-slate-500">Research Report</h2>
+                <span class="h-px flex-1 bg-slate-800"></span>
+            </div>
+
+            <!-- Highlights Bento Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="md:col-span-2 glass-card p-8 bento-item bg-gradient-to-br from-fashion-glass to-slate-800/40">
+                    <span class="text-fashion-accent text-xs font-bold tracking-widest uppercase mb-4 block">New Revolution</span>
+                    <h3 class="text-2xl font-bold mb-4">日系新革命 🇯🇵</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">不再只是極簡！次文化系華麗變身，機能感遇上蕾絲，帥氣又夢夢幻的「精緻叛逆」正當道！✨</p>
+                </div>
+                <div class="glass-card p-8 bento-item border-l-4 border-fashion-silver">
+                    <h4 class="font-bold text-fashion-silver mb-2">關鍵色 🎨</h4>
+                    <p class="text-xs text-slate-400">金屬銀是主角，搭配透明感層次與莫蘭迪色，質感拉滿！</p>
+                </div>
+                <div class="glass-card p-8 bento-item border-l-4 border-fashion-accent">
+                    <h4 class="font-bold text-fashion-accent mb-2">必備神器 👟</h4>
+                    <p class="text-xs text-slate-400">銀色芭蕾舞鞋、窄長圍巾、工裝口袋裙... 提前佔領焦點！</p>
+                </div>
+                <div class="md:col-span-4 glass-card p-8 bento-item">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                        <div>
+                            <h3 class="text-2xl font-bold">韓系進化論 🇰🇷</h3>
+                            <p class="text-slate-300 text-sm mt-2">辦公室女妖更有力量了！極客風時髦書呆子，或是重工單寧廢土浪漫！🎀</p>
+                        </div>
+                        <div class="px-6 py-2 bg-slate-700 rounded-full text-xs font-bold tracking-widest">KOREAN EVOLUTION</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deep Dive Content -->
+            <div class="glass-card p-8 md:p-12 space-y-12 bg-slate-900/40">
+                <div>
+                    <h2 class="text-3xl font-black mb-8 border-b border-slate-800 pb-4">2025-2026 日韓穿搭趨勢深度研究報告</h2>
+                    <p class="text-slate-300 leading-relaxed text-lg">
+                        隨著全球時尚脈動從純粹的復古回歸轉向更具未來感的變體，2025至2026年的日韓穿搭風格將呈現「機能與柔美碰撞」及「結構化與極簡結合」的雙重特徵。
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Japanese Section -->
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <span class="w-12 h-12 flex items-center justify-center rounded-xl silver-gradient text-white font-bold text-xl shadow-lg">1</span>
+                            <h3 class="text-2xl font-bold">日系風格 (Japanese Style)</h3>
+                        </div>
+                        <div class="space-y-8 pl-4 border-l-2 border-slate-800">
+                            <div class="space-y-3">
+                                <h4 class="font-bold text-fashion-accent text-lg">核心風格演變</h4>
+                                <ul class="space-y-4 text-slate-300 text-sm">
+                                    <li><strong class="text-white">次文化系 (Subcul-kei) 現代化：</strong> 將早期的原宿感轉化為更具質感的「精緻叛逆」，強調剪裁精細度。</li>
+                                    <li><strong class="text-white">新古著感 (Neo-Vintage)：</strong> 核心在於重製 (Remake) 與升級再造，常見拼接技法。</li>
+                                    <li><strong class="text-white">機能女性化 (Gorpcore Femininity)：</strong> 將戶外元素與蕾絲或透膚感材質融合。</li>
+                                </ul>
+                            </div>
+                            <div class="space-y-3">
+                                <h4 class="font-bold text-fashion-accent text-lg">關鍵元素</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-slate-800 rounded-full text-xs border border-slate-700">極致疊穿 Sheer Layering</span>
+                                    <span class="px-3 py-1 bg-slate-800 rounded-full text-xs border border-slate-700">金屬質感 Metallic</span>
+                                    <span class="px-3 py-1 bg-slate-800 rounded-full text-xs border border-slate-700">球形裙 Balloon Skirts</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Korean Section -->
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <span class="w-12 h-12 flex items-center justify-center rounded-xl bg-fashion-accent text-dark font-bold text-xl shadow-lg">2</span>
+                            <h3 class="text-2xl font-bold">韓系風格 (Korean Style)</h3>
+                        </div>
+                        <div class="space-y-8 pl-4 border-l-2 border-slate-800">
+                            <div class="space-y-3">
+                                <h4 class="font-bold text-fashion-accent text-lg">核心風格演變</h4>
+                                <ul class="space-y-4 text-slate-300 text-sm">
+                                    <li><strong class="text-white">辦公室女妖 (Office Siren) 升級：</strong> 強調墊肩與修長線條，展現都會女性權威感。</li>
+                                    <li><strong class="text-white">浪漫廢土風 (Romantic Grunge)：</strong> 破損感布料與柔美蝴蝶結結合，混亂中的美感。</li>
+                                    <li><strong class="text-white">高機能俐落風 (Hyper-Functional Chic)：</strong> 追求「一衣多穿」，偏好靜奢灰色與米色。</li>
+                                </ul>
+                            </div>
+                            <div class="space-y-3">
+                                <h4 class="font-bold text-fashion-accent text-lg">關鍵元素</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-slate-800 rounded-full text-xs border border-slate-700">極客風 Geek Chic</span>
+                                    <span class="px-3 py-1 bg-slate-800 rounded-full text-xs border border-slate-700">蝴蝶結進化 Ribbon Core 2.0</span>
+                                    <span class="px-3 py-1 bg-slate-800 rounded-full text-xs border border-slate-700">重工單寧 Distressed Denim</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comparison Table -->
+                <div class="pt-12 border-t border-slate-800">
+                    <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-fashion-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                        日韓趨勢對比與 2026 展望
+                    </h3>
+                    <div class="overflow-x-auto rounded-xl border border-slate-800">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="bg-slate-800/50">
+                                    <th class="p-4 text-xs font-black uppercase tracking-wider text-slate-500">維度</th>
+                                    <th class="p-4 text-xs font-black uppercase tracking-wider text-slate-500">日系 (Japanese)</th>
+                                    <th class="p-4 text-xs font-black uppercase tracking-wider text-slate-500">韓系 (Korean)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-sm">
+                                <tr class="border-t border-slate-800">
+                                    <td class="p-4 font-bold text-slate-400 bg-slate-800/20">視覺重點</td>
+                                    <td class="p-4">層次感、布料紋理</td>
+                                    <td class="p-4">比例、剪裁線條</td>
+                                </tr>
+                                <tr class="border-t border-slate-800">
+                                    <td class="p-4 font-bold text-slate-400 bg-slate-800/20">色彩傾向</td>
+                                    <td class="p-4"><span class="text-fashion-morandi font-medium">莫蘭迪色</span>、銀色</td>
+                                    <td class="p-4"><span class="text-slate-500 font-medium">低飽和色</span>、復古紅</td>
+                                </tr>
+                                <tr class="border-t border-slate-800">
+                                    <td class="p-4 font-bold text-slate-400 bg-slate-800/20">2026 轉向</td>
+                                    <td class="p-4"><strong>數位自然主義</strong>：科技面料與工藝結合。</td>
+                                    <td class="p-4"><strong>未來主義極簡</strong>：極簡線條搭配高價面料。</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Summary -->
+                <div class="p-8 bg-fashion-accent/5 rounded-3xl border border-fashion-accent/20">
+                    <h3 class="text-xl font-bold mb-4">簡要結論</h3>
+                    <p class="text-slate-300 leading-relaxed italic">
+                        2025-2026 年的日韓時尚不僅是服飾的更迭，更是「科技機能」與「個人主義」的深度融合。日系風格在手工藝中加入科技銀光，而韓系則在知性剪裁中置入廢土浪漫。未來兩年的趨勢強調打破性別與場合的分界。
+                    </p>
+                </div>
+
+                <!-- References -->
+                <div class="text-xs text-slate-500 space-y-2">
+                    <p class="font-bold uppercase tracking-widest text-slate-400 mb-2">參考文獻</p>
+                    <p>1. WGSN Fashion Feed (2024-2025 Trend Reports)</p>
+                    <p>2. Vogue Japan - "2025 Spring/Summer Collection Analysis"</p>
+                    <p>3. Musinsa 2024 下半年趨勢簡報 (Musinsa 2024 H2 Fashion Trend Report)</p>
+                    <p>4. Fashion Snap - Tokyo Fashion Week Observation 2025</p>
+                    <p>5. Pinterest Predicts 2025 - Fashion Section</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Signature Footer Section (As requested, centered but part of the main layout, not a bottom footer element) -->
+        <div class="pt-12 text-center border-t border-slate-800 space-y-4">
+            <div class="inline-flex items-center gap-4 bg-slate-800/40 px-8 py-4 rounded-full border border-slate-700 shadow-xl">
+                <span class="text-slate-400 font-medium">【主題探索報告】by <strong class="text-fashion-accent">Febby Chang</strong></span>
+                <span class="w-px h-4 bg-slate-700"></span>
+                <span class="text-slate-500 text-sm tracking-widest">學號：M11416211</span>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        // Smooth reveal animations on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
