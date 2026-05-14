@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic AI: 企業的數位勞動力革命</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#050505',
+                            accent: '#3b82f6',
+                            surface: '#111111',
+                            glass: 'rgba(255, 255, 255, 0.03)',
+                            border: 'rgba(255, 255, 255, 0.1)',
+                            highlight: '#a855f7'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #050505;
+            color: #e5e7eb;
+            overflow-x: hidden;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa 0%, #a855f7 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glow-overlay {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 100% 100%, rgba(168, 85, 247, 0.1) 0%, transparent 40%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+
+        .media-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 24px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            transition: transform 0.5s ease;
+        }
+
+        .media-container:hover img {
+            transform: scale(1.02);
+        }
+
+        .article-content p {
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #d1d5db;
+        }
+
+        .step-pill {
+            background: linear-gradient(90deg, rgba(59, 130, 246, 0.2), transparent);
+            border-left: 4px solid #3b82f6;
+            padding: 1rem 1.5rem;
+            border-radius: 0 12px 12px 0;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #050505;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #222;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #333;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <div class="glow-overlay"></div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 px-6 py-4">
+        <nav class="max-w-6xl mx-auto flex justify-between items-center glass-card px-8 py-3">
+            <div class="font-display font-extrabold text-2xl tracking-tighter">
+                <span class="text-white">AGENTIC</span><span class="gradient-text">.AI</span>
+            </div>
+            <div class="text-xs font-display tracking-widest text-gray-500 uppercase">
+                M11416211 • TECH INSIGHT
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12">
+        
+        <!-- Hero Section -->
+        <section class="mb-20 text-center">
+            <div class="inline-block px-4 py-1 mb-6 rounded-full border border-brand-border bg-brand-glass text-xs font-display tracking-widest text-brand-accent uppercase animate-pulse-slow">
+                Featured Article 2024
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black font-display mb-8 leading-[1.1] tracking-tight text-white">
+                不再只是出一張嘴？<br/>
+                <span class="gradient-text">數位勞動力</span> 的終極進化
+            </h1>
+            
+            <div class="media-container relative group overflow-hidden mb-12">
+                <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-[26px] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                <div class="relative">
+                    <img src='https://opal.google/board/blobs/ea9fafcd-03f5-4855-b1c4-e5e142922d2f' alt='Agentic AI Banner' class="object-cover w-full h-[400px] md:h-[500px]" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section class="mb-24 flex flex-col md:flex-row gap-12 items-start">
+            <div class="md:w-1/3 sticky top-32">
+                <div class="glass-card p-8 border-l-4 border-l-brand-accent">
+                    <h2 class="text-2xl font-bold mb-4 font-display text-white">摘要</h2>
+                    <p class="text-sm text-gray-400 leading-relaxed italic">
+                        "當 AI 決定不再只當「導航員」，而是「司機」，企業的營運邏輯將被徹底改寫。"
+                    </p>
+                </div>
+            </div>
+            <div class="md:w-2/3 article-content text-lg">
+                <p>在這個充滿術語的科技時代，我們早已習慣了與 AI 對話。但如果你最近跟上了矽谷的討論，你會發現風向變了。大家不再討論 AI 能「寫」出什麼，而是在討論 AI 能「做」到什麼。</p>
+                <p>這就是 <strong>Agentic AI（代理式人工智慧）</strong> 的時代——一個 AI 從「導航員」正式轉職為「司機」的轉折點。</p>
+                <p class="bg-brand-glass p-6 rounded-2xl border border-brand-border mt-8">
+                    想像一下，你坐在副駕駛座，拿著地圖告訴司機該怎麼走，這就是我們過去幾年與 ChatGPT 等「Copilot（副駕駛）」的互動模式。而 <strong>Agentic AI</strong> 的出現，就像是一位經驗豐富的「代駕司機」。它不會只給你一張清單，它會自己去查場地、比價、寫邀請函草稿，甚至在你授權的情況下完成預約。
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 1: Definition (Bento Style) -->
+        <section class="mb-32">
+            <h2 class="text-3xl font-bold mb-12 font-display flex items-center">
+                <span class="text-brand-accent mr-4">01.</span> Agentic AI 到底是何方神聖？
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-8 hover:bg-white/5 transition-colors group">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 text-blue-400 group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">自主思考</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">具備高度主動性。在給定高階目標後，它不需要你一步步餵指令，能自己決定下一步該做什麼。</p>
+                </div>
+                
+                <div class="glass-card p-8 hover:bg-white/5 transition-colors group">
+                    <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 text-purple-400 group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.364-6.364l-.707-.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M12 21V20"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">腦內模擬</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">模仿「系統 2 思維」，將複雜目標拆解成子任務，並不斷進行自我反思與效率優化。</p>
+                </div>
+
+                <div class="glass-card p-8 hover:bg-white/5 transition-colors group">
+                    <div class="w-12 h-12 bg-pink-500/20 rounded-xl flex items-center justify-center mb-6 text-pink-400 group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">數位工具箱</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">不再只是在對話框裡打轉，能透過 API 串接 ERP、CRM 或 Excel，直接動手處理數據。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Evolution -->
+        <section class="mb-32">
+            <h2 class="text-3xl font-bold mb-12 font-display flex items-center">
+                <span class="text-brand-accent mr-4">02.</span> AI 的「成年禮」進化史
+            </h2>
+            <div class="space-y-6">
+                <div class="flex items-center gap-6 p-6 glass-card border-l-4 border-l-gray-600 opacity-60">
+                    <div class="text-4xl font-black font-display text-gray-700">2010s</div>
+                    <div>
+                        <h4 class="font-bold text-white uppercase tracking-wider">嬰兒期：規則型 AI</h4>
+                        <p class="text-gray-400">死板但聽話，如 AlphaGo 或電商推薦系統。</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-6 p-6 glass-card border-l-4 border-l-brand-accent">
+                    <div class="text-4xl font-black font-display text-brand-accent">2022</div>
+                    <div>
+                        <h4 class="font-bold text-white uppercase tracking-wider">青少年期：Copilot 時代</h4>
+                        <p class="text-gray-400">ChatGPT 誕生，極度健談但需要人不斷下令。</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-6 p-8 glass-card border-l-4 border-l-highlight bg-white/5 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:rotate-12 transition-transform">
+                        <svg class="w-24 h-24" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1a1 1 0 112 0v1a1 1 0 11-2 0zM13.536 14.95a1 1 0 011.414-1.414l.707.707a1 1 0 01-1.414 1.414l-.707-.707zM6.464 14.95l.707.707a1 1 0 11-1.414 1.414l-.707-.707a1 1 0 011.414-1.414z"/></svg>
+                    </div>
+                    <div class="text-4xl font-black font-display text-highlight">2024+</div>
+                    <div class="z-10">
+                        <h4 class="font-bold text-white uppercase tracking-wider">成年期：代理人時代 (Agentic)</h4>
+                        <p class="text-gray-400">具備推理能力（如 OpenAI o1），開始獨立承擔業務流程。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Business Impact -->
+        <section class="mb-32">
+            <div class="bg-gradient-to-br from-blue-900/20 to-purple-900/20 p-12 rounded-[32px] border border-white/10">
+                <h2 class="text-3xl font-bold mb-8 font-display">老闆們在瘋什麼？</h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-white/5 rounded-full flex items-center justify-center font-display font-bold text-brand-accent">01</div>
+                            <div>
+                                <h4 class="font-bold text-white mb-2">效率狂魔</h4>
+                                <p class="text-sm text-gray-400">BCG 研究指出：AI 代理能提升業務處理速度達 30% 至 50%。這不只是省錢，是速度的革命。</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-white/5 rounded-full flex items-center justify-center font-display font-bold text-brand-accent">02</div>
+                            <div>
+                                <h4 class="font-bold text-white mb-2">趨勢首位</h4>
+                                <p class="text-sm text-gray-400">Gartner 將其列為 2025 策略技術首位。預測 2028 年辦公室 15% 的決策將由代理獨立完成。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-card p-6 flex flex-col justify-center items-center text-center">
+                        <div class="text-5xl font-black text-white mb-2">2025</div>
+                        <div class="text-sm uppercase tracking-widest text-brand-accent font-display">關鍵轉折年</div>
+                        <div class="mt-4 text-gray-400 text-sm">
+                            Sam Altman 與 Demis Hassabis 斷言：<br/>這將是 AI 真正開始幫人類「上班」的元年。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Risks -->
+        <section class="mb-32">
+            <h2 class="text-3xl font-bold mb-12 font-display text-center">挑戰與潛在陰影</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 border border-white/5 rounded-3xl bg-white/[0.02]">
+                    <h4 class="text-red-400 font-bold mb-4 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                        失控的風險
+                    </h4>
+                    <p class="text-sm text-gray-500">當具備操作資金與資料的能力，一旦產生「幻覺」，後果將難以估計。</p>
+                </div>
+                <div class="p-8 border border-white/5 rounded-3xl bg-white/[0.02]">
+                    <h4 class="text-red-400 font-bold mb-4 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        白領焦慮
+                    </h4>
+                    <p class="text-sm text-gray-500">不再只是取代體力活，行政、初級工程師與分析師正面臨轉型壓力。</p>
+                </div>
+                <div class="p-8 border border-white/5 rounded-3xl bg-white/[0.02]">
+                    <h4 class="text-red-400 font-bold mb-4 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                        法律黑箱
+                    </h4>
+                    <p class="text-sm text-gray-500">決策邏輯若無法被核查（Explainability），法律責任的歸屬將成為難題。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Future -->
+        <section class="mb-32">
+            <h2 class="text-3xl font-bold mb-12 font-display text-right">未來職場生態</h2>
+            <div class="space-y-12">
+                <div class="flex flex-col md:flex-row gap-8 items-center group">
+                    <div class="md:w-1/2 order-2 md:order-1">
+                        <h4 class="text-2xl font-bold mb-4 text-white">AI 復仇者聯盟</h4>
+                        <p class="text-gray-400">未來不會有一個萬能的 AI 解決所有事，而是由法律、財務、行銷代理組成「數位團隊」協同作業。</p>
+                    </div>
+                    <div class="md:w-1/2 order-1 md:order-2 glass-card p-1 aspect-video flex items-center justify-center bg-brand-glass group-hover:border-brand-accent/50 transition-colors">
+                        <div class="text-brand-accent animate-pulse">
+                            <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 20 20"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3.005 3.005 0 013.75-2.906z"/></svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col md:flex-row gap-8 items-center group">
+                    <div class="md:w-1/2 glass-card p-1 aspect-video flex items-center justify-center bg-brand-glass group-hover:border-highlight/50 transition-colors">
+                        <div class="text-highlight animate-float">
+                            <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 20 20"><path d="M8 5a1 1 0 100 2h2a1 1 0 100-2H8zM8 8a1 1 0 100 2h2a1 1 0 100-2H8zM14 15a4 4 0 00-8 0v3h8v-3zM4 4a2 2 0 114 0 2 2 0 01-4 0zM16 4a2 2 0 114 0 2 2 0 01-4 0z"/></svg>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <h4 class="text-2xl font-bold mb-4 text-white">AI 與 AI 談生意</h4>
+                        <p class="text-gray-400">你的 AI 代理與供應商的 AI 代理直接談判、簽約與支付。人類只需在最後點頭，或是在沙灘上喝咖啡。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="mb-32 text-center">
+            <hr class="border-white/10 mb-20" />
+            <h2 class="text-3xl font-bold mb-8 font-display text-white">準備好迎接你的新「同事」了嗎？</h2>
+            <div class="max-w-2xl mx-auto article-content text-lg mb-12">
+                <p>Agentic AI 的浪潮就像當年的網際網路一樣，已經是不可逆轉的趨勢。雖然在安全性、倫理與法律責任上還有許多「坑」要填，但它作為新一代數位勞動力的地位已經確立。</p>
+                <p class="font-bold text-white">你，準備好把方向盤交給你的數位代理人了嗎？</p>
+            </div>
+            
+            <div class="glass-card p-12 relative overflow-hidden group cursor-pointer">
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <h3 class="text-xl font-bold mb-6 text-white relative z-10">💬 加入討論</h3>
+                <p class="text-gray-400 mb-8 relative z-10">如果今天你能雇用一個「AI 代理人」，你最想把哪項工作丟給它處理？</p>
+                <button class="relative z-10 px-8 py-3 bg-white text-black font-bold rounded-full hover:scale-105 transition-transform active:scale-95">
+                    立即分享觀點
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Subtle Scroll Progress -->
+    <div id="progress-bar" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-brand-accent to-highlight z-[60] transition-all duration-150" style="width: 0%"></div>
+
+    <script>
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+        };
+    </script>
+</body>
+</html>
